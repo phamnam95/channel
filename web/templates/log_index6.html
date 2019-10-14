@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+<link
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+        href="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css"
+        rel="stylesheet" type="text/css">
+<link
+        href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.css"
+        rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.js"></script>
+</head>
+<body>
+<H1 style="color:black">Sonic log prediction result (NaN values in the true sonic log if available are replaced with 0 in the plots.)</H1>
+<h4>Input the position of top and last samples of interval of interest based on the plot underneath (samples starting from position 1).</h4>
+
+<form method=post action="">
+<table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.name }}</td><td>{{ field }}</td>
+    <td>{{ field.description }}</td>
+    {% if field.errors %}
+      <td><ul class=errors>
+        {% for error in field.errors %}
+	  <li><font color="red">{{ error }}</font></li>
+	{% endfor %}</ul></td>
+    {% endif %}
+    </tr>
+  {% endfor %}
+</table>
+<p><input type=submit value=Submit></form></p>
+
+<p>
+{% if script != None %}
+{{ script|safe }}
+{{ div|safe }}
+{% endif %}
+</p>
+</body>
+</html>

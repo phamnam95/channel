@@ -1,0 +1,49 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <title>Running my first AI Demo</title>
+      <link 
+	  href= "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	  rel="stylesheet">
+    </head>
+    <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <div class="site-wrapper">
+        <div class="cover-container">
+          <div class="inner cover">
+          </div>
+          <div class="mastfoot">
+          <hr />
+            <div class="container">
+              <div style="margin-top:5%">
+		            <h1 style="color:black">Missing Sonic Log Prediction Demo (Geophysics - Submitted)</h1>
+		            <h4 style="color:black">New well QC. Input names of GR and Density logs. Input number of Monte-Carlo samples to generate DL model uncertainty.</h4>
+			    
+		            <form method=post action="">
+		            <table>
+				 {% for field in form %}
+				 <tr>
+					 <td>{{ field.name }}</td><td>{{ field }}</td>
+					 <td>{{ field.description }}</td>
+				 	 {% if field.errors %}
+						 <td><ul class=errors>
+							 {% for error in field.errors %}
+						 	 <li><font color="red">{{ error }}</font></li>
+						 	 {% endfor %}</ul></td>
+				 	{% endif %}
+				 </tr>
+				 {% endfor %}
+			    </table>  
+
+			    <p><input type=submit style="color:black;" value=Submit></form></p>
+		          
+	            </div>	
+            </div>
+        	</div>
+     </div>
+   </div>
+   {% endblock %}
+</body>
+</html>
+  

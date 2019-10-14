@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href=
+"http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+rel="stylesheet">
+    <meta charset="utf-8">
+    <title>About me</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <h1> About me </h1>
+    <p> I am a PHD candidate in Geophysics at UT Austin. My advisor is Dr. Sergey Fomel. </p>
+    <p> I have been working on deep learning for seismic and well-log interpretation, and seismic processing, at TCCS group. </p>
+    <p> The Texas Consortium for Computational Seismology (TCCS) is a joint initiative of the Bureau of Economic Geology and the Center for Numerical Analysis at the Oden Institute for Computational Engineering and Sciences at The University of Texas at Austin. PIs are Dr. Sergey Fomel and Dr. Bjorn Engquist.
+    <p style="color:black"> Contact: nam-pham@utexas.edu </p>
+
+    <img src="{{ group_image }}" alt="Group Image"></img>   
+    {% endblock %}
+  </body>
+</html>

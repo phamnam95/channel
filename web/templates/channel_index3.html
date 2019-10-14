@@ -1,0 +1,32 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <title>Running my first AI Demo</title>
+      <link 
+	  href= "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	  rel="stylesheet">
+    </head>
+    <body>
+    <div class="site-wrapper">
+        <div class="cover-container">
+          <div class="inner cover">
+          </div>
+          <div class="mastfoot">
+          <hr />
+            <div class="container">
+              <div style="margin-top:5%">
+		            <h1 style="color:black">Channel Detection Demo (https://doi.org/10.1190/INT-2018-0202.1)</h1>
+		            <h4 style="color:black">Upload a new seismic amplitude volume. The seismic data must be in SEG-Y or numpy array. If it is SEG-Y, the user must input inline and crossline header keys. Otherwise, it must be in format (inline, crossline, time/depth).</h4>
+			    
+		            <form method=post enctype=multipart/form-data action='/seis/result'>
+				    <p><input type=file name=file></p>
+				    <p><input type=submit style="color:black;" value=Upload></p>
+		            </form>
+	            </div>	
+            </div>
+        	</div>
+     </div>
+   </div>
+</body>
+</html>
+  

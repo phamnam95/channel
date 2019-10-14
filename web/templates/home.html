@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href=
+"http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Deep learning for geophysical applications</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1> Demos of deep learning applications in geophysical problems </h1>
+    <p> My name is Nam Pham. I am a PHD student at University of Texas at Austin in Geophysics. The demos on my website are based on my published abstracts and articles: </p>
+    <p> 1) Pham, N., S. Fomel, and D. Dunlap, 2019, Automatic channel detection using deep learning, Interpretation, Vol. 7(3), SE43-SE50 (https://doi.org/10.1190/INT-2018-0202.1). </p>
+    <p> 2) Pham, N., X. Wu, and E. Naeini, Missing well log prediction using convolutional long short-term memory network, Geophysics, submitted. </p>
+    <p> 3) Pham, N., E. Naeini, Missing well log prediction using deep recurrent neural networks, EAGE 2019 (https://doi.org/10.3997/2214-4609.201901612). </p>
+    <p> 4) Pham, N. X. Wu, Missing sonic log prediction using convolutional long short-term memory, SEG 2019. </p>
+    <p> 5) Pham, N., S. Fomel, and D. Dunlap, 2018, Automatic channel detection using deep learning, SEG 2018 (https://doi.org/10.1190/segam2018-2991756.1). </p>
+
+    <p style="color:red"> Please feel free to contact me at nam-pham@utexas.edu if you want to discuss more.</p>
+
+    <img src="{{ my_image }}" alt="My Image"></img>
+    {% endblock %}
+  </body>
+</html>

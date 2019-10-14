@@ -1,0 +1,34 @@
+<html>
+<html lang="en">
+<head>
+<title>My channel detection AI Demo</title>
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.css"
+    rel="stylesheet" type="text/css">
+
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.js"></script>
+
+</head>
+<body>
+<H1>Segmentation result</H1>
+
+<form action="">
+<table>
+	{% for field in form %}
+		<tr>
+		<td>{{ field.name }}</td><td>{{ field }}</td>
+	{% endfor %}
+</table>
+<input type="submit" value='Plot'>
+</form>
+
+{{ script|safe }}
+{{ div|safe }}
+
+</body>
+</html>
+
