@@ -1,0 +1,15 @@
+Flask
+Werkzeug
+wtforms
+Numpy<=1.14.5,>=1.13.3
+setuptools>=41.0.0
+matplotlib<2.3,>=2.2
+scikit-learn<0.20,>=0.19
+wrapt>=1.11.1
+bokeh
+gunicorn
+Tensorflow
+Segyio
+Lasio
+pscript
+pandas
